@@ -1,5 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins';
+}
+
+body {
+    background-image: url('../img/cloud.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*entender porque o backgroud porque não funciona*/
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav.menu a{
+    /* o position relative pega a partir do  */
+    position: relative;
+    font-size: 1em;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+    
+}
+.btn-login {
+    width: 130px;
+    height: 50px;
+    border-radius: 6px;
+    margin-left: 40px;
+    font-weight: 500;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(3, 42, 57, 0.329);
+
+}
+
+.menu a::after{
+    
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5px;
+
+}
+
+.menu a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+main {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 33, 33, 0.5);
+    backdrop-filter: ;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px, solid #060d12;
+    margin: 30px 0;
 }
